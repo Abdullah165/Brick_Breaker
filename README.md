@@ -1,5 +1,5 @@
 # Brick_Breaker
-Brick_Breaker C++
+Brick_Breaker Game C++
 
 Most of the things done, exactly like in the picture below, but not complete.
 
