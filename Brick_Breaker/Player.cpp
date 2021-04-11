@@ -7,7 +7,7 @@
 
 Ball ball;
 Board board;
-std::string s = "####################################";
+std::string string = "####################################";
 
 Player::Player()
 {
@@ -26,10 +26,10 @@ void Player::Draw()
 		{
 			if (height == 0 || height == board.get_Height() - 1) std::cout << "*";
 			else if (width == 0 || width == board.get_Width() - 1) std::cout << "*";
-			else if (height == 2 && width == 5) std::cout << s;
+			else if (height == 2 && width == 5) std::cout << string;
 			else if (ball.get_YPosition() == 2)
 			{
-				s[ball.get_XPosition() - 5] = ' ';
+				string[ball.get_XPosition() - 5] = ' ';
 				m_playerYPosition++;
 			}
 			else if (ball.get_YPosition() == m_YPosition+1) m_playerYPosition--;
